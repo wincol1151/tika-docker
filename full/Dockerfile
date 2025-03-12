@@ -57,6 +57,10 @@ RUN set -eux \
         tesseract-ocr-fra \
         tesseract-ocr-spa \
         tesseract-ocr-deu \
+        tesseract-ocr-chi-sim \
+		tesseract-ocr-jpn \
+		tesseract-ocr-kor \
+		tesseract-ocr-chi-tra\
     && echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections \
     && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
         xfonts-utils \
